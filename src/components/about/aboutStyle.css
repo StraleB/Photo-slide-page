@@ -1,0 +1,150 @@
+.aboutContainer{
+    background-color: rgb(39, 39, 39);
+    margin:4em -0.5em;
+    position: relative;
+    width: 100vw;
+    display: grid;
+    height: 90vh;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: "photographer description";
+    overflow: hidden;
+}
+
+
+
+.photographer{
+    height: 100vh;
+    grid-area: photographer ;
+}
+
+.photographer img{
+    height:95vh;
+}
+
+.desc-skills{
+    grid-area: description;
+    width: 50vw;
+    margin-left: 6em;
+    margin-top: 8em;
+}
+.aboutMe{
+    color: white;
+}
+
+#about-text{
+    color: white;
+}
+
+#projects{
+    margin: 2em -6em;
+    width: 50em;
+}
+
+#projects li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 4em;
+    color: white;
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 1em;
+}
+
+.aboutNum{
+    font-style: normal;
+    font-size: 2.5em;
+}
+
+@media only screen and (max-width: 768px){
+    .aboutContainer{
+        margin:4em -0.5em;
+        display: grid;
+        height: 90vh;
+        grid-template-columns:1fr ;
+        grid-template-rows:1fr ;
+        grid-template-areas:
+         "photographer" 
+         "description";
+         overflow-y: scroll;
+    }
+
+
+    .photographer{
+        height: 25em;
+        grid-area: photographer ;
+        overflow: hidden;
+    }
+    
+    .photographer img{
+        float: right;
+        height:75em;
+        width: 50em;
+        margin:-20em -2em;
+    }
+    
+    .desc-skills{
+        grid-area: description;
+        width: 90vw;
+        margin: 8em auto;
+    }
+
+    
+    #projects{
+        margin: 2em -3em;
+        width: 40em;
+    }
+    
+    #projects li{
+        margin-left: 2em;
+        font-size: 0.8em;
+    }
+    
+    .aboutNum{
+        font-size: 2.2em;
+    }
+}
+
+@media only screen and (max-width: 448px){
+    .photographer{
+        height: 20em;
+        overflow: hidden;
+    }
+    
+    .photographer img{
+        float: right;
+        height:60em;
+        width: 40em;
+        margin:-23em -6em;
+    }
+
+    .desc-skills{
+        grid-area: description;
+        width: 90vw;
+        margin: 2em auto;
+    }
+
+    .aboutMe{
+        font-size: 1.8em;
+    }
+    
+    #about-text{
+        font-size: 0.8em;
+    }
+
+    
+    
+    #projects{
+        margin: 2em -3em;
+        width: 30em;
+    }
+    
+    #projects li{
+        margin-left: 1em;
+        font-size: 0.6em;
+    }
+    
+    .aboutNum{
+        font-size: 2em;
+    }
+}

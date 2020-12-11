@@ -1,0 +1,114 @@
+.navigation{
+    max-width: 1600px;
+    margin: 2em auto;
+    font-size: 1.3em;
+    padding: 0.2em 0;
+}
+
+img[alt="logo"]{
+    height: 2em;
+    margin: -1.3em 0;
+    position: absolute;
+}
+
+.navigation-list{
+    float: right;
+}
+
+
+img[ alt="hamburger-menu"]{
+    display: none;
+    position: absolute;
+    top: 1.3em;
+    right: 2em;
+    height: 2em;
+}
+
+
+.navigation-list li{list-style: none;}
+
+.navigation-list ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 1em 1em;
+    font-weight: 400;
+}
+
+.navigation-list ul{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    margin-top: -0.01rem;
+}
+
+
+
+.nav-search{
+   padding: 0.7em 1em;
+   border-radius: 2em;
+   border: transparent;
+   box-shadow: inset 0px -1px 1px 0px rgba(255, 255, 255, 0.185);
+   outline: none;
+   background-color:rgba(0, 0, 0, 0.247);
+   color: white;
+}
+
+.search-section{
+    margin: -1.1em 8em;
+}
+
+.search-section ion-icon{
+    color: white;
+    float: left;
+    font-size: 1.3em;
+    margin-top: 0.3rem;
+    padding-right: 0.2em;
+}
+
+
+@media only screen and (max-width: 768px){
+    .navigation-list img[ alt="hamburger-menu"]{
+        display: block;
+        margin:-1.2em 1em;
+        position: relative;
+    }
+
+    img[alt="logo"]{
+        height: 2em;
+        margin: -0.1em 3em;
+        position: absolute;
+    }
+
+    .navigation-list{
+        position: absolute;
+        right: 0;
+    } 
+
+    .navigation-list:hover .navs{
+        opacity: 1;
+    } 
+
+.navs{
+    background-color: rgb(66, 66, 66);
+    width: 8em;
+    position: absolute;
+    right: 0;
+    top: -0.9em;
+    opacity: 0;
+    z-index: 3;
+}
+
+    .navigation-list li{
+        padding: 0.5em 1em;
+    }
+
+    .search-section{
+        margin: 0em 6em;
+    }
+
+    .nav-search{
+display: none;
+     }
+
+
+}

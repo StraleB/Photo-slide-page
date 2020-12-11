@@ -1,0 +1,156 @@
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    max-height: 90vh;
+    width: 100vw;
+}
+
+.contact-pic{
+    width: 50vw;
+    height: 100vh;
+    margin: 1em -2em;
+    overflow: hidden;
+}
+
+img[alt="cpic"]{
+    width: 60em;
+    height: 100vh;
+}
+
+.contact-and-form{
+    margin: 2em 2em;
+    width: 40vw;
+    color: white;
+}
+
+
+#contact-txt{
+    font-style: italic;
+}
+
+.contact-list-info{
+    list-style: none;
+}
+
+.contact-list-info li{
+    margin-top: 1.5em;
+}
+
+.contact-subh{
+    margin-top: 3em;
+}
+
+.contact-and-form form{
+    width: 30vw;
+}
+
+.contact-and-form input{
+    width: 95%;
+    height: 2.8em;
+    background-color:rgba(53, 53, 53, 0.267);
+    color: white;
+    border:transparent;
+    padding: 0 2em;
+    margin-top: 1em;
+    outline: none;
+}
+
+.contact-and-form textarea{
+    background-color:rgba(53, 53, 53, 0.267);
+    color: white;
+    margin: 1em 0;
+    width: 95%;
+    border: transparent;
+    padding: 0.5em 2em;
+    outline: none;
+}
+
+.contact-and-form input[type="button"]{
+    width: 11em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-and-form input[type="button"]:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+@media only screen and (max-width: 768px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        max-height: 200vh;
+        width: 100vw;
+    }
+
+    .contact-pic{
+        width: 100vw;
+        height: 40vh;
+        margin: 1em -2em;
+        overflow: hidden;
+    }
+    
+    img[alt="cpic"]{
+        width: 60em;
+        float: right;
+        height: 100vh;
+        margin: -10em 0;
+    }
+
+    .contact-and-form{
+        margin: 2em auto;
+        width: 80vw;   
+    }
+    .contact-list-info li{
+        margin-top: 1.5em;
+    }
+    
+    .contact-subh{
+        margin-top: 3em;
+    }
+    
+    .contact-and-form form{
+        width: 50vw;
+        margin: 0 2em;
+    }
+}
+
+@media only screen and (max-width: 448px){
+    .contact-pic{
+        width: 100vw;
+        height: 30vh;
+        margin: 1em -2em;
+        overflow: hidden;
+    }
+
+    img[alt="cpic"]{
+        width: 40em;
+        float: right;
+        height: 70vh;
+        margin: -10em 0;
+    }
+
+    .contact-info{
+        font-size: 1em;
+    }
+
+    #contact-txt{
+        font-size: 0.9em;
+    }
+
+
+    .contact-list-info{
+        margin: 0 -2em;
+        font-size: 0.8em;
+    }
+
+    .contact-subh{
+        font-size: 1em;
+    }
+
+    .contact-and-form form{
+        width: 60vw;
+        margin: 0 1em;
+    }
+}
